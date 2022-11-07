@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <title>Hra kostky</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body id="telo">
+        <header class="jumbotron bg-info">
+            <h1 class="display-3 text-light text-center">Kostky</h1>
+        </header>
+        <main class="container">
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <img src="img/kostka6.png" alt="player1" id="dice1">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/kostka1.png" alt="player2" id="dice2">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <img src="img/car1.png" id="player1" width="250" 
+                    style="position: relative">
+                </div>
+                <div class="col-md-12">
+                    <img src="img/car2.png" id="player2" width="250" 
+                    style="position: relative">
+                </div>
+            </div>            
+            <div class="row mt-3">
+                <div id="result1" class="col-md-6 alert alert-warning">Hráč 1</div>
+                <div id="result2" class="col-md-6 alert alert-warning">Hráč 2</div>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="play">HREJ</button>
+            </div>
+
+            <div id="container2">
+                <p id="odstavec">Uhádni číslo od 1 - 100.</p>
+                <p id="outputext">Vlož číslo:</p>
+                <input type="text" id="uzivInput"><button id="btn">Enter</button>
+            </div>
+        </main>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/play.js"></script>
+    </body>
+</html>
